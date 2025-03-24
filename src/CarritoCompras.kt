@@ -1,7 +1,7 @@
 class CarritoDeCompras {
     // oid del producto como clave en el mapa
     private val productosEnCarrito = mutableMapOf<Int, Pair<Producto, Int>>()
-
+    // funcion qgregar producto
     fun agregarProducto(producto: Producto, cantidad: Int) {
         if (producto.cantidadDisponible < cantidad) {
             println("No hay suficiente cantidad disponible del producto: ${producto.nombre}")
